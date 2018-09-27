@@ -1,0 +1,10 @@
+在运行中输入cmd，进入命令行，输入
+
+adb shell monkey --pct-touch 50 --pct-motion 15 --pct-anyevent 5 --pct-majornav 12 --pct-trackball 1 --pct-nav 0 --pct-syskeys 15 --pct-appswitch 2 --throttle 500 -s 0 --ignore-crashes --ignore-timeouts --ignore-security-exceptions -v -v -v 1234567890
+
+adb shell monkey --ignore-crashes --ignore-timeouts --ignore-security-exceptions --kill-process-after-error --pct-trackball 0 --pct-nav 0 --pct-majornav 0 --pct-anyevent 0 -v -v -v --throttle 500 1200000000
+
+adb shell monkey -p com.flyme.design --pct-touch 50 --pct-motion 15 --pct-anyevent 5 --pct-majornav 12 --pct-trackball 1 --pct-nav 0 --pct-syskeys 15 --pct-appswitch 2 --throttle 500 -s 0 --ignore-crashes --ignore-timeouts --ignore-security-exceptions -v 9999999
+
+ps |grep monkey
+kill pid
